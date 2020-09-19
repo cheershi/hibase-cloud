@@ -3,7 +3,7 @@ package com.hibase.baseweb.constant;
 /**
  * 通过常量类
  *
- * @author hufeng
+ * @author chenfeng
  * @create 2018-09-20 10:51
  */
 public class CommConstant {

@@ -4,7 +4,7 @@ import com.fasterxml.classmate.TypeResolver;
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.base.Predicate;
-import com.hibase.baseweb.web.ResponseModel;
+import com.hibase.baseweb.core.web.ResponseModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +28,7 @@ import static springfox.documentation.schema.AlternateTypeRules.newRule;
 /**
  * swagger配置类
  *
- * @author hufeng
+ * @author chenfeng
  * @create 2018-08-31 13:53
  */
 @Configuration

@@ -1,7 +1,9 @@
 package com.hibase.baseweb.utils;
 
-import org.apache.poi.ss.usermodel.*;
+import cn.hutool.core.collection.CollUtil;
 import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.*;
+
 import java.io.InputStream;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -10,7 +12,7 @@ import java.util.List;
 /**
  * excel解析工具类
  *
- * @author hufeng
+ * @author chenfeng
  * @create 2018-08-17 14:45
  */
 public class ExcelUtils {
@@ -113,7 +115,7 @@ public class ExcelUtils {
 
         List<List<String>> result = new ArrayList<>();
 
-        if (MyUtils.listIsNotNull(sheets)) {
+        if (CollUtil.isNotEmpty(sheets)) {
 
             for (Sheet sheet : sheets) {
 

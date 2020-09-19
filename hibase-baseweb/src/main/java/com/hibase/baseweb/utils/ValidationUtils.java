@@ -1,6 +1,7 @@
 package com.hibase.baseweb.utils;
 
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import com.hibase.baseweb.valid.ValidationResult;
 
@@ -15,7 +16,7 @@ import java.util.Set;
 /**
  * 类备注：
  *
- * @author hufeng
+ * @author chenfeng
  * @version 1.0
  * @date 2018-09-30 21:58
  * @desc
@@ -29,7 +30,7 @@ public class ValidationUtils {
     public static <T> ValidationResult validateEntity(T obj) {
         ValidationResult result = new ValidationResult();
         Set<ConstraintViolation<T>> set = validator.validate(obj, Default.class);
-        if (MyUtils.setIsNotNull(set)) {
+        if (CollUtil.isNotEmpty(set)) {
             result.setHasErrors(true);
             Map<String, String> errorMsg = new HashMap<>();
             for (ConstraintViolation<T> cv : set) {
@@ -48,7 +49,7 @@ public class ValidationUtils {
     public static <T> ValidationResult validateProperty(T obj, String propertyName) {
         ValidationResult result = new ValidationResult();
         Set<ConstraintViolation<T>> set = validator.validateProperty(obj, propertyName, Default.class);
-        if (MyUtils.setIsNotNull(set)) {
+        if (CollUtil.isNotEmpty(set)) {
             result.setHasErrors(true);
             Map<String, String> errorMsg = new HashMap<String, String>();
             for (ConstraintViolation<T> cv : set) {

@@ -1,7 +1,7 @@
 package com.hibase.baseweb.utils;
 
-import com.hibase.baseweb.constant.ExceptionCode;
-import com.hibase.baseweb.exception.AcquireUserException;
+import com.hibase.baseweb.constant.exception.ExceptionCode;
+import com.hibase.baseweb.core.exception.AcquireUserException;
 import com.hibase.baseweb.model.User;
 import com.hibase.baseweb.user.UserInfoContext;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  * 用户工具类
  *
- * @author hufeng
+ * @author chenfeng
  * @create 2018-08-31 12:21
  */
 @Component

@@ -1,7 +1,7 @@
 package com.hibase.baseweb.utils;
 
 
-import com.hibase.baseweb.constant.ResultConstant;
+import com.hibase.baseweb.constant.web.ResultConstant;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 

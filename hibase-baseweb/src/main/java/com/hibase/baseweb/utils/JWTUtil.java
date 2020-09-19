@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * jwt工具类
  *
- * @Author hufeng
+ * @Author chenfeng
  * @Time 2018/12/13 13:29
  */
 public class JWTUtil {

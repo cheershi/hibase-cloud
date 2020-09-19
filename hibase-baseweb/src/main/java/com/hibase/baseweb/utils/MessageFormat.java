@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 字符串格式化工具类
  *
- * @author hufeng
+ * @author chenfeng
  * @date 2019/07/10
  */
 public class MessageFormat {

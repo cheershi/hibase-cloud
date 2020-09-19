@@ -2,7 +2,7 @@ package com.hibase.baseweb.config.help;
 
 
 import cn.hutool.core.util.RandomUtil;
-import com.hibase.baseweb.exception.GenerateIdException;
+import com.hibase.baseweb.core.exception.GenerateIdException;
 import com.hibase.baseweb.utils.IdWorker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * 生成id helper类
  *
- * @author hufeng
+ * @author chenfeng
  * @date 2018/12/27
  */
 @Component

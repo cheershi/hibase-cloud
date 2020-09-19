@@ -1,11 +1,12 @@
 package com.hibase.baseweb.model;
 
+import com.hibase.baseweb.model.mabatis.BaseDO;
 import lombok.Data;
 
 /**
  * 数据权限DO
  *
- * @author hufeng
+ * @author chenfeng
  * @date 2019/05/20
  */
 @Data

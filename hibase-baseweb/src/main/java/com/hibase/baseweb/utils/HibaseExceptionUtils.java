@@ -1,13 +1,13 @@
 package com.hibase.baseweb.utils;
 
 import cn.hutool.core.util.StrUtil;
-import com.hibase.baseweb.exception.HibaseException;
+import com.hibase.baseweb.core.exception.HibaseException;
 
 
 /**
  * bibase异常工具类
  *
- * @author hufeng
+ * @author chenfeng
  * @date 2019/01/18
  */
 public class HibaseExceptionUtils {

@@ -1,5 +1,6 @@
 package com.hibase.baseweb.utils;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.metadata.TableFieldInfo;
 import com.baomidou.mybatisplus.core.metadata.TableInfo;
@@ -11,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * 数据库properties对应的table信息
  *
- * @author hufeng
+ * @author chenfeng
  * @date 2019/03/28
  */
 @Slf4j
@@ -35,7 +36,7 @@ public class TablePropertiesHelper {
             return null;
         }
 
-        if (tableInfo == null || MyUtils.listIsNull(tableInfo.getFieldList())) {
+        if (tableInfo == null || CollUtil.isEmpty(tableInfo.getFieldList())) {
 
             return null;
         }

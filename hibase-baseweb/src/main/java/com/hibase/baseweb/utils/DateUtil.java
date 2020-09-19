@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  * 类备注：时间转换工具类
  *
- * @author hufeng
+ * @author chenfeng
  * @version 1.0
  * @date 2018-05-23 9:31
  * @desc
